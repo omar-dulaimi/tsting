@@ -24,7 +24,7 @@ var sqlQuery = ''
               +  ')';
 
 module.exports = {
-    createAdminTable: function() {
+    createTable: function() {
         db.query('USE sql7267836', function (err) {
             if (err) {
               console.log("Cannot Use Database: sql7267836");

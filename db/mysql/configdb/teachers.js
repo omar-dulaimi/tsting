@@ -6,8 +6,10 @@ var data = require('./admin.data.js');
 
 
 
+
 var sqlQuery = ''
-    + 'CREATE TABLE IF NOT EXISTS teachers('
++ 'CREATE TABLE IF NOT EXISTS teachers('
++ 'phone_number INTEGER(10) NOT NULL, '
     + 'id INT NOT NULL AUTO_INCREMENT, '
     + 'PRIMARY KEY(id), '
     + 'first_name VARCHAR(30) NOT NULL, '
@@ -15,13 +17,12 @@ var sqlQuery = ''
     + 'last_name VARCHAR(30) NOT NULL, '
     + 'data_of_birth DATE NULL DEFAULT NULL, '
     + 'Gender ENUM("male", "female") NOT NULL DEFAULT "male", '
-    + 'date_of_employment, '
-    + 'phone_number INTEGER(10) NOT NULL'
+    + 'date_of_employment DATE NULL DEFAULT NULL'
     + ')';
 
 
 module.exports = {
-    createAdminTable: function () {
+    createTable: function () {
         db.query('USE sql7267836', function (err) {
             if (err) {
                 console.log("Cannot Use Database: sql7267836");
@@ -29,9 +30,9 @@ module.exports = {
             } else {
                 db.query(sqlQuery, function (err, result) {
                     if (err) {
-                        console.log(err);
+                        console.log("teachers", err);
                     } else {
-                        console.log("Tabe Created: admin");
+                        console.log("Table Created: teachers");
                         console.log(result);
                     }
                 })

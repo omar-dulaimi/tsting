@@ -3,8 +3,10 @@ var mysql = require('mysql');
 var db = require('../conn');
 
 var createAdmin = require('./admin.js');
-createAdmin.createAdminTable();
+createAdmin.createTable();
 
+var createTeachers = require('./teachers.js');
+createTeachers.createTable();
 /*
 mysql.query('', function(err) {
   console.log("Cannot XXX: xxx");
