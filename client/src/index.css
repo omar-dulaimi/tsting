@@ -12,34 +12,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-/* Styles added by Omar */
-.developersList{
-  margin-bottom: 1%;
-}
-
-.badge{
-  margin-left: 1%;
-}
-
-li {
-  padding-left: 20px;
-}
-
-li :hover {
-    background-color: #111;
-    border-color: #28a745;
-    border-style: groove;
-    border-radius: 5px;
-}
-
-.developerItem :hover {
-  background-color: rgb(93, 159, 189);
-  color: white;
-}
-
-.navbar{
-  background-color: #111 !important;
-  color: white;
-}
-/*  */
