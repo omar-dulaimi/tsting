@@ -1,38 +1,68 @@
 import React, { Component, Fragment } from 'react';
-import '../../index.css';
+import './About.css';
+// https://www.w3schools.com/icons/fontawesome_icons_intro.asp
 
 class About extends Component {
 
     render() {
         return (
             <Fragment>
-                <div className="jumbotron container">
-                    <h1 className="display-4">About us</h1>
-                    <p className="lead">We are a team of developers working on projects required in the curriculum of Hackreactor</p>
-
-                    <div className="list-group developersList">
-                        <div className="list-group-item d-flex justify-content-between align-items-center bg-secondary developerItem">
-                            <a href="https://github.com/alsheikh813" className="list-group-item list-group-item-action">Scrum master: Ashraf Alsheikh</a>
-                            <span className="badge badge-primary badge-pill">11</span>
-                        </div>
-
-                        <div className="list-group-item d-flex justify-content-between align-items-center bg-secondary developerItem">
-                            <a href="https://github.com/MansourMoukdad88" className="list-group-item list-group-item-action">Pruduct Owner: Mansour almoukdad</a>
-                            <span className="badge badge-primary badge-pill">5</span>
-                        </div>
-
-                        <div className="list-group-item d-flex justify-content-between align-items-center bg-secondary developerItem">
-                            <a href="https://github.com/ghosoun89" className="list-group-item list-group-item-action">Developer: Ghusoun Aldebea</a>
-                            <span className="badge badge-primary badge-pill">5</span>
-                        </div>
-
-                        <div className="list-group-item d-flex justify-content-between align-items-center bg-secondary developerItem">
-                            <a href="https://github.com/omar-dulaimi" className="list-group-item list-group-item-action">Developer: Omar Dulaimi</a>
-                            <span className="badge badge-primary badge-pill">13</span>
+                <section>
+                    <div className="container">
+                        <div className="row mbr-justify-content-center">
+                            <div className="col-lg-6 mbr-col-md-10">
+                                <div className="wrap">
+                                    <div className="ico-wrap">
+                                        <span className="mbr-iconfont fa-volume-up fa" />
+                                    </div>
+                                    <div className="text-wrap vcenter">
+                                        <h2 className="mbr-fonts-style mbr-bold mbr-section-title3 display-5"> <span>Successful</span></h2>
+                                        <p className="mbr-fonts-style text1 mbr-text display-6">Every project is an opportunity to learn ,to figure out problems and challenges to invent and reinvent</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-6 mbr-col-md-10">
+                                <div className="wrap">
+                                    <div className="ico-wrap">
+                                        <span className="mbr-iconfont fa-group fa" />
+                                    </div>
+                                    <div className="text-wrap vcenter">
+                                        <h2 className="mbr-fonts-style mbr-bold mbr-section-title3 display-5">
+                                            <span>Who We Are</span>
+                                        </h2>
+                                        <p className="mbr-fonts-style text1 mbr-text display-6">We are  young mind team that we gather in  lively place "RBK" which is participate to create creative programmers </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-6 mbr-col-md-10">
+                                <div className="wrap">
+                                    <div className="ico-wrap">
+                                        <span className="mbr-iconfont fa-globe fa" />
+                                    </div>
+                                    <div className="text-wrap vcenter">
+                                        <h2 className="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Launch
+                    <span>A Unique Project</span>
+                                        </h2>
+                                        <p className="mbr-fonts-style text1 mbr-text display-6">The project that help you to contact with your children's schools from any part of the world </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-6 mbr-col-md-10">
+                                <div className="wrap">
+                                    <div className="ico-wrap">
+                                        <span className="mbr-iconfont fa-trophy fa" />
+                                    </div>
+                                    <div className="text-wrap vcenter">
+                                        <h2 className="mbr-fonts-style mbr-bold mbr-section-title3 display-5"> <span>Our Targets</span></h2>
+                                        <p className="mbr-fonts-style text1 mbr-text display-6">To save people's time and make their life much easier </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <a className="btn btn-primary btn-lg" href="mailto:o.m.dulaimi@gmail.com" role="button">Contact us</a>
-                </div>
+                </section>
+
+
             </Fragment>
         );
     }
