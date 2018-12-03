@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 import logo from './logo.png';
 import './App.css';
 
@@ -72,7 +74,7 @@ class App extends Component {
     const response = await fetch('/GetTest2');
     const body = await response.json();
     if (response.status !== 200) throw Error(body.message);
-    console.log("handleSubmitGET body: ",body);
+    console.log("handleSubmitGET body: ", body);
     this.setState({ responseToGet: body.express });
   };
 
@@ -87,84 +89,151 @@ class App extends Component {
     });
     const body = await response.text();
     this.setState({ responseToPost: body });
-    console.log("handleSubmitPOST body: ",body);
+    console.log("handleSubmitPOST body: ", body);
 
   };
 
   render() {
     return (
-      <div className="App">
-      {/* 
+      <Fragment>
+        <Router>
+          <div>
+            { /* Navbar */}
+            < nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" >
+              <nav className="navbar navbar-light bg-light">
+                <Link className="navbar-brand" to="/"><img src={logo} className="logo" alt="website logo" /></Link>
+              </nav>
+              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul className="navbar-nav mr-auto">
+                  <li className="nav-item active">
+                    <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
+                  </li>
+
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/about">About</Link>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Fun
+                    </a>
+                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <Link className="dropdown-item" to="#">Action</Link>
+                      <Link className="dropdown-item" to="#">Another action</Link>
+                      <Link className="dropdown-item" to="#">Something else here</Link>
+                    </div>
+                  </li>
+
+                </ul>
+
+                <ul className="navbar-nav ml-auto">
+                  <li className="nav-item active">
+                    <a className="nav-link" data-toggle="modal" data-target="#signInModal" id="signinbtn">Sign In</a>
+                  </li>
+                </ul>
+              </div>
+            </nav >
+            { /* Navbar */}
+
+            {/* Routing */}
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+          </div>
+        </Router>
+
+
+        { /* Modal Sign In */}
+        <div className="modal fade" id="signInModal" tabIndex={-1} role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div className="modal-dialog modal-dialog-centered" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="exampleModalLongTitle">Welcome Back!</h5>
+                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                </button>
+              </div>
+              <div className="modal-body">
+                <div className="row">
+                  <div className="form-group col-xs-4 col-sm-6 col-md-8 col-lg-8">
+                    <input type="text" id="userNameSignInInput" className="form-control" placeholder="Username" required />
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="form-group col-xs-4 col-sm-6 col-md-8 col-lg-8">
+                    <input type="password" id="passwordSignInInput" className="form-control" placeholder="Password" required />
+                  </div>
+                </div>
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-primary signinButton">Signin</button>
+                <button type="button" className="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        { /* Modal Sign In */}
+
+
+        {/* Testing Components*/}
+        <div className="DivNotes">
+          {/* 
         Read New Semantic Elements in HTML5: (<header> <nav> <section> <footer>)
         https://www.w3schools.com/html/html5_semantic_elements.asp
       
       */}
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <hr />
-          <nav>
-          <button>Home</button>
-          <button>Parents</button>
-          <button>Teachers</button>
-          <button>Admin</button>
-          <button>Sign in</button>
-          <button>About</button>
-          </nav>       
-        </header>
-        <section>
-          <hr />
-          <Home />
-          <hr />
-          <Parents />
-          <hr />
-          <Teachers />
-          <hr />
-          <Admin />
-          <hr />
-          <Signin />
-          <hr />
-          <About />
 
-        </section>
-        <footer>
-          <hr />
-          <p>Have a nice day!</p>
-        </footer>
-        <hr />
+          <header className="App-header">
+            <hr />
+            <div className="DivNotes">
+              <h2>Testing Part:</h2>
+            </div>
+          </header>
 
-        <h2>Testing Part:</h2>
-        <div className="DivNotes">
-          <h3>From componentDidMount() > callApiHi</h3>
-          <p>{this.state.responseToGetAuto}</p>
+          <section>
+            <Parents />
+            <hr />
+            <Teachers />
+            <hr />
+            <Admin />
+          </section>
+
+          <div className="DivNotes">
+            <h3>From componentDidMount() > callApiHi</h3>
+            <p>{this.state.responseToGetAuto}</p>
+          </div>
+          <div className="DivNotes">
+            <h3>Form Get:</h3>
+            <form onSubmit={this.handleSubmitGET}>
+              <p>
+                <strong>Get From Server:</strong>
+              </p>
+              <button type="submit">Get /api/hello</button>
+            </form>
+            <p>{this.state.responseToGet}</p>
+          </div>
+          <div className="DivNotes">
+            <h3>Form Post:</h3>
+            <form onSubmit={this.handleSubmitPOST}>
+              <p>
+                <strong>Post to Server:</strong>
+              </p>
+              <input
+                type="text"
+                value={this.state.post}
+                onChange={e => this.setState({ post: e.target.value })}
+              />
+              <button type="submit">Post /api/world</button>
+            </form>
+            <p>{this.state.responseToPost}</p>
+          </div>
+
+          <footer>
+            <hr />
+            <p>Have a nice day!</p>
+          </footer>
         </div>
-        
-        <div className="DivNotes">
-          <h3>Form Get:</h3>
-          <form onSubmit={this.handleSubmitGET}>
-            <p>
-              <strong>Get From Server:</strong>
-            </p>
-            <button type="submit">Get /api/hello</button>
-          </form>
-          <p>{this.state.responseToGet}</p>
-        </div>
-        <div className="DivNotes">
-          <h3>Form Post:</h3>
-          <form onSubmit={this.handleSubmitPOST}>
-            <p>
-              <strong>Post to Server:</strong>
-            </p>
-            <input
-              type="text"
-              value={this.state.post}
-              onChange={e => this.setState({ post: e.target.value })}
-            />
-            <button type="submit">Post /api/world</button>
-          </form>
-          <p>{this.state.responseToPost}</p>
-        </div>
-        
-      </div>
+      </Fragment >
     );
   }
 }

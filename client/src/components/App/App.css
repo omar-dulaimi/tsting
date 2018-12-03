@@ -46,7 +46,48 @@ https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp
 
 .DivNotes {
   border-style: solid;
-
   border-width: 5px;
-
 }
+
+
+
+/* Styles added by Omar */
+.developersList{
+  margin-bottom: 1%;
+}
+
+.badge{
+  margin-left: 1%;
+}
+
+.developerItem :hover {
+  background-color: rgb(93, 159, 189);
+  color: white;
+}
+
+.navbar{
+  background-color: black !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+li > a{
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+li > a:hover{
+  background-color: rgb(17, 66, 201) !important;
+  color: white !important;
+}
+
+div > a:hover{
+  color: rgb(247, 247, 247) !important;
+  background-color: rgb(17, 66, 201) !important;
+}
+
+#signinbtn, #signupbtn{
+  cursor:pointer;
+}
+/*  */
