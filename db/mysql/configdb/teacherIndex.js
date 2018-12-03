@@ -2,8 +2,9 @@ var mysql = require('mysql');
 
 var db = require('../conn');
 
-var createTeachers = require('./teachers.js');
-createTeachers.createTable();
-
+var teachers = require('./teachers.js');
+teachers.createTable();
+teachers.selectAll();
+teachers.addData({name:"mansour"});
 
 
