@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import '../../../index.css';
 
 class WeeklyReports extends Component {
@@ -6,7 +6,7 @@ class WeeklyReports extends Component {
     render() {
         return (
             <div>
-                <h1>WeeklyReports</h1>
+                <h1 className="myHeading1">WeeklyReports</h1>
             </div>
         )
     }
