@@ -13,9 +13,3 @@ module.exports = {
         O.runO();
     }
  }
-
-
-// const ser = require('./server/server.js');
-
-// ser.Cl1();
-// ser.Cl2();
