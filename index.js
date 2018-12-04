@@ -4,6 +4,8 @@ const app = express();
 
 const port = process.env.PORT || 5000;
 
+const apis = require('./apis/index');
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -28,6 +30,17 @@ app.post('/PostTest1', (req, res) => {
   res.send(
     { express: `Express Responde to POST request. This is your post: ${req.body.post}` }
   );
+});
+
+//Get a number fact from API and send it back to client
+app.get('/numberfact', (req, res) => {
+  apis.getNumberFact((err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.send({ fact: data });
+    }
+  });
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
