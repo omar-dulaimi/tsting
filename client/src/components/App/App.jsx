@@ -18,6 +18,7 @@ class App extends Component {
     responseToPost: 'Click the button to Post',
     responseToGet: 'Click the button to Get',
     responseToGetAuto: 'This will Auto Change',
+    activeNavBarLink: ''
   };
 
   /*
@@ -26,6 +27,7 @@ class App extends Component {
   https://reactjs.org/docs/react-component.html#componentdidmount
   */
   componentDidMount() {
+    this.handleNavBarActive('home');
     this.callApiHi()
       .then(res => this.setState({ responseToGetAuto: res.express }))
       .catch(err => console.log(err));
@@ -93,6 +95,16 @@ class App extends Component {
 
   };
 
+  //According to state -> add or remove classes
+  NavBarItemActive = (value) => {
+    return 'nav-item ' + ((value === this.state.selected) ? 'active' : '');
+  }
+
+  //Change selected item to current value
+  handleNavBarActive = (value) => {
+    this.setState({ selected: value });
+  }
+
   render() {
     return (
       <Fragment>
@@ -108,11 +120,11 @@ class App extends Component {
               </button>
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
-                  <li className="nav-item active">
+                  <li className={this.NavBarItemActive('home')} onClick={this.handleNavBarActive.bind(this, 'home')}>
                     <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                   </li>
 
-                  <li className="nav-item">
+                  <li className={this.NavBarItemActive('about')} onClick={this.handleNavBarActive.bind(this, 'about')}>
                     <Link className="nav-link" to="/about">About</Link>
                   </li>
                   <li className="nav-item dropdown">
