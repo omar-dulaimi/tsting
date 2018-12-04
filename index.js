@@ -43,4 +43,12 @@ app.get('/numberfact', (req, res) => {
   });
 });
 
+
+
+
+
+const SubServer = require('./server/server.js');
+
+SubServer.runAll();
+
 app.listen(port, () => console.log(`Listening on port ${port}`));
