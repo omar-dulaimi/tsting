@@ -1,10 +1,17 @@
 import React, { Component, Fragment } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './Parents.css';
+import TimeTable from '../Teachers/ClassesComponents/TimeTable.jsx';
+import HomeWork from '../Teachers/ClassesComponents/HomeWork.jsx';
+import Marks from '../Teachers/ClassesComponents/Marks.jsx';
+import WeeklyReports from '../Teachers/ClassesComponents/WeeklyReports.jsx';
+import Events from '../Teachers/ClassesComponents/Events.jsx';
 
 class Parents extends Component {
     render() {
         return (
             <Fragment>
+
                 <div>
                     <h1>Parents Page:</h1>
                 </div>
@@ -13,24 +20,44 @@ class Parents extends Component {
                         <button type="button" className="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Children
                         </button>
-                        <div className="dropdown-menu .mymenu ">
-                            <a className="dropdown-item .muitem " href="#">Ahamed</a>
-                            <a className="dropdown-item .muitem " href="#">Khalid</a>
+                        <div className="dropdown-menu mymenu ">
+                            <a className="dropdown-item muitem " href="#">Ahamed</a>
+                            <a className="dropdown-item muitem " href="#">Khalid</a>
                         </div>
                     </div>
                     <div className="btn-group">
                         <button type="button" className="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Teachers
+                            Chatting
                     </button>
-                        <div className="dropdown-menu .mymenu ">
-                            <a className="dropdown-item .muitem " href="#">Sarah:English</a>
-                            <a className="dropdown-item .muitem " href="#">Khalid:Math</a>
-                            <a className="dropdown-item .muitem " href="#">Omer:Arabic</a>
-                            <a className="dropdown-item .muitem " href="#">Ashraf:Sience</a>
+                        <div className="dropdown-menu mymenu ">
+                            <a className="dropdown-item muitem " href="#">Sarah:English</a>
+                            <a className="dropdown-item muitem " href="#">Khalid:Math</a>
+                            <a className="dropdown-item muitem " href="#">Omer:Arabic</a>
+                            <a className="dropdown-item muitem " href="#">Ashraf:Sience</a>
                         </div>
                     </div>
 
-                    <button type="button" className="btn btn-info" >Timetable</button>
+                    <div className="btn-group">
+                        <button type="button" className="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Info
+                    </button>
+
+                        <div className="dropdown-menu mymenu ">
+                            <a className="dropdown-item muitem " href="#">Timetable</a>
+                            <a className="dropdown-item muitem " href="#">Homework</a>
+                            <a className="dropdown-item muitem " href="#">Marks</a>
+                            <a className="dropdown-item muitem " href="#">WeeklyReports</a>
+                            <a className="dropdown-item muitem " href="#">Events</a>
+                        </div>
+
+                    </div>
+                    <Router>
+                        <div>
+
+                            <Link type="button" class="btn btn-info" to="/timetable">timetable</Link>
+                            <Route exact path="/timetable" component={TimeTable} />
+                        </div>
+                    </Router>
 
                     <button type="button" className="btn btn-info" data-toggle="modal" data-target="#exampleModal" >Complians</button>
                     <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -46,7 +73,7 @@ class Parents extends Component {
 
                                     <div className="form-group">
                                         <label for="Parentes-name" className="col-form-label">Name</label>
-                                        <input type="text" className="form-control" id="Parentes-name" />
+                                        <input type="text" className="form-control" id="Parentes-name" required autofocus />
                                     </div>
                                     <div className="form-group">
                                         <label for="message-text" className="col-form-label">Title</label>
@@ -68,8 +95,7 @@ class Parents extends Component {
                     </div>
                 </form>
 
-                <form>
-                </form>
+
             </Fragment>
         );
     }

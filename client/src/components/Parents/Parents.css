@@ -1,8 +1,8 @@
-a :hover{
-    color: blueviolet !important;
-    background-color: azure !important;
+.mymenu :hover{
+    color: #7f1894 !important;
+    /* background-color: #75ecd8; */
 }
-
+/* 
 .muitem{
-    font-size: 34px;
-}
+    background-color: #75ecd8;
+} */
