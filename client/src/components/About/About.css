@@ -1,4 +1,4 @@
-section {
+.mysection {
     padding-top: 4rem;
     padding-bottom: 5rem;
     background-color: #f1f4fa;
@@ -12,8 +12,8 @@ section {
     margin-bottom: 2rem;
 }
 
-.wrap:hover {
-    background: linear-gradient(135deg,#6394ff 0%,#0a193b 100%);
+.wrap {
+    background: linear-gradient(135deg,#6394ff 0%,#55c7db 100%);
     color: white;
 }
 
@@ -27,31 +27,36 @@ section {
     margin: 1rem;
     padding-right: 1rem;
 }
-.vcenter {
+.center {
     margin: auto;
 }
 
 .mbr-section-title3 {
     text-align: left;
 }
-h2 {
+.myh2 {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
-.display-5 {
+.myh2 {
     font-family: 'Source Sans Pro',sans-serif;
     font-size: 1.4rem;
 }
-.mbr-bold {
+.myh2{
     font-weight: 700;
 }
 
- p {
+.mypa{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     line-height: 25px;
 }
-.display-6 {
+.mypa {
     font-family: 'Source Sans Pro',sans-serif;
     font-size: 1rem;
+}
+
+.mycontainer {
+    width: 100%;
+    height: 100%;
 }
