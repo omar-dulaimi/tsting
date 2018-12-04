@@ -6,5 +6,3 @@ var teachers = require('./teachers.js');
 teachers.createTable();
 teachers.selectAll();
 teachers.addData({name:"mansour"});
-
-

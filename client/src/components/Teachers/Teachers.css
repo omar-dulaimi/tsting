@@ -24,10 +24,85 @@
 #dashboard {
     position: relative;
 }
-.mySlides {display:none;}
 div > span:hover {
     color:#4e79bf !important;
 } 
 a > p:hover {
     color: #4e79bf !important;
+}
+/* ----------------------------------------- */
+            /* Teachers Page CSS */
+/* ----------------------------------------- */
+.teachers{
+    background-color:#f8f8f9;
+    height: 800px;
+}
+
+
+            /* Timetable CSS */
+/* ----------------------------------------- */
+/* BODY {
+  font-family: Trebuchet MS;
+  margin:20px;
+  background-color: #600040;
+} */
+
+ .timetable{
+ background-color:#f8f8f9;
+    height: 600px;   
+}
+.events {
+     background-color:#f8f8f9;
+    height: 1150px;  
+}
+H1 {
+  text-align: center;
+}
+
+.myTimetable {
+  width:100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.myTimetable THEAD{
+  color: #6897BB;
+}
+
+.myTimetable TBODY {
+  background-color:#EFF4F8;
+}
+
+.myTimetable TD {
+  border: 1px solid black;
+  padding: 6px;
+  text-align: center;
+}
+.myTimetable TBODY TR TD:first-child {
+  background-color:#C2D5E3;
+  font-weight: bold;
+}
+
+.break, .lunch {
+  background-color: #C2D5E3 !important;
+  font-style: italic;
+}
+
+.subject {
+  font-size: 12pt;
+  margin-bottom:4px;
+}
+
+.room {
+  font-size: 10pt;
+  font-style: italic;
+}
+.tableCenter {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+a {
+    font-size: 30px;
 }
