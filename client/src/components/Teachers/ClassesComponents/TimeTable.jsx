@@ -9,9 +9,9 @@ class TimeTable extends Component {
         return (
             <Fragment>
                 <div className="timetable">
-                <h1>TimeTable Component</h1>
+                <h1 className="myHeading1">TimeTable Component</h1>
                     <div>
-                        <h1>My Timetable</h1>
+                        <h1 className="myHeading1">My Timetable</h1>
                         <table className="myTimetable">
                             <thead>
                                 <tr>

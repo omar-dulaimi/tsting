@@ -55,7 +55,7 @@ a > p:hover {
      background-color:#f8f8f9;
     height: 1150px;  
 }
-H1 {
+.myHeading1 {
   text-align: center;
 }
 
@@ -103,6 +103,6 @@ H1 {
     padding: 10px;
 }
 
-a {
+/* a {
     font-size: 30px;
-}
+} */
