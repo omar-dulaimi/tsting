@@ -63,7 +63,7 @@ class Parents extends Component {
                     
 
                     <button type="button" className="btn btn-info" data-toggle="modal" data-target="#exampleModal" >Complians</button>
-                    <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div className="modal-dialog" role="document">
                             <div className="modal-content">
                                 <div className="modal-header">
@@ -75,16 +75,16 @@ class Parents extends Component {
                                 <div className="modal-body">
 
                                     <div className="form-group">
-                                        <label for="Parentes-name" className="col-form-label">Name</label>
-                                        <input type="text" className="form-control" id="Parentes-name" required autofocus />
+                                        <label htmlFor="Parentes-name" className="col-form-label">Name</label>
+                                        <input type="text" className="form-control" id="Parentes-name" required autoFocus />
                                     </div>
                                     <div className="form-group">
-                                        <label for="message-text" className="col-form-label">Title</label>
+                                        <label htmlFor="message-text" className="col-form-label">Title</label>
                                         <input type="text" className="form-control" id="Title-name" />
                                     </div>
 
                                     <div className="form-group">
-                                        <label for="message-text" className="col-form-label">Message:</label>
+                                        <label htmlFor="message-text" className="col-form-label">Message:</label>
                                         <textarea className="form-control" id="message-text"></textarea>
                                     </div>
 
