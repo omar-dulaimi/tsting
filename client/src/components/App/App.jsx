@@ -113,6 +113,14 @@ class App extends Component {
             </div>
           </header>
 
+          <section>
+            <Parents />
+            <hr />
+            <Teachers />
+            <hr />
+            <Admin />
+          </section>
+
           <div className="DivNotes">
             <h3>From componentDidMount() > callApiHi</h3>
             <p>{this.state.responseToGetAuto}</p>
