@@ -44,6 +44,21 @@ app.get('/numberfact', (req, res) => {
 });
 
 
+app.post('/user', function (req, res) {
+  let email = req.body.email;
+
+  if (email === 'a@a.com') {
+    res.send('admin');
+  } else if (email === 'b@b.com') {
+    res.send('teacher');
+  } else if (email === 'c@c.com') {
+    res.send('parent');
+  } else {
+    res.send('no such user!');
+  }
+});
+
+
 
 
 
