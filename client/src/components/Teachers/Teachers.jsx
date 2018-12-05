@@ -20,7 +20,7 @@ class Teachers extends Component {
                 <div className="jumbotron jumbotron-fluid teachers">
                     <div className="container">
                         <h1 className="display-4"> <strong>Teachers Page</strong> <small>example</small></h1>
-                        <p class="lead"> Something  Something  Something  Something  Something  Something </p>
+                        <p className="lead"> Something  Something  Something  Something  Something  Something </p>
                         <div className="dropdown myDropDown">
                            <h4> <span>Dashboard</span></h4>
 

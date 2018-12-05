@@ -36,6 +36,8 @@ class Events extends Component {
                                             <img className="card-img-top" src="https://feletviolix.files.wordpress.com/2016/01/biblical-math-2.jpg?w=350&h=200&crop=1" alt=""/>
                                             <div className="card-body">
                                                 <h5 className="card-title">Meeting</h5>
+                                                <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                                 <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                                 <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                             </div>
@@ -44,6 +46,8 @@ class Events extends Component {
                                             <img className="card-img-top" src="http://www.guitarbitz.com/downloads/1420803550Guitar-Tutors.jpg" alt=""/>
                                             <div className="card-body">
                                                 <h5 className="card-title">Meeting</h5>
+                                                <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                                 <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                                                 <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                             </div>
@@ -52,6 +56,8 @@ class Events extends Component {
                                             <img className="card-img-top" src="https://www.sigmaaldrich.com/content/dam/sigma-aldrich/product7/113/e029294.tif/_jcr_content/renditions/e029294-medium.jpg" alt=""/>
                                             <div className="card-body">
                                                 <h5 className="card-title">Meeting</h5>
+                                                <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                                                 <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                             </div>
@@ -62,6 +68,8 @@ class Events extends Component {
                                             <img className="card-img-top" src="http://pragmaticcompendium.com/wp-content/uploads/2013/08/caps-lock-equals-shouting.jpg" alt=""/>
                                             <div className="card-body">
                                                 <h5 className="card-title">I.T</h5>
+                                                <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                                 <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                                 <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                             </div>
@@ -70,6 +78,8 @@ class Events extends Component {
                                             <img className="card-img-top" src="http://www.guitarbitz.com/downloads/1420803550Guitar-Tutors.jpg"  />
                                             <div className="card-body">
                                                 <h5 className="card-title">Party</h5>
+                                                <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                                 <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                                                 <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                             </div>
@@ -78,6 +88,8 @@ class Events extends Component {
                                             <img className="card-img-top" src="http://www.guitarbitz.com/downloads/1420803550Guitar-Tutors.jpg" />
                                             <div className="card-body">
                                                 <h5 className="card-title">Party</h5>
+                                                <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                                                 <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                             </div>
@@ -90,6 +102,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="https://www.sigmaaldrich.com/content/dam/sigma-aldrich/product7/113/e029294.tif/_jcr_content/renditions/e029294-medium.jpg" />
                                         <div className="card-body">
                                             <h5 className="card-title">Meeting</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -98,6 +112,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="https://feletviolix.files.wordpress.com/2016/01/biblical-math-2.jpg?w=350&h=200&crop=1"/>
                                         <div className="card-body">
                                             <h5 className="card-title">Conference</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -106,6 +122,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="https://www.sigmaaldrich.com/content/dam/sigma-aldrich/product7/113/e029294.tif/_jcr_content/renditions/e029294-medium.jpg"/>
                                         <div className="card-body">
                                             <h5 className="card-title">Science</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -116,6 +134,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="http://pragmaticcompendium.com/wp-content/uploads/2013/08/caps-lock-equals-shouting.jpg"/>
                                         <div className="card-body">
                                             <h5 className="card-title">I.T</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -124,6 +144,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="http://www.guitarbitz.com/downloads/1420803550Guitar-Tutors.jpg"  />
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -132,6 +154,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="http://www.guitarbitz.com/downloads/1420803550Guitar-Tutors.jpg" />
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -144,6 +168,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="https://feletviolix.files.wordpress.com/2016/01/biblical-math-2.jpg?w=350&h=200&crop=1" />
                                         <div className="card-body">
                                             <h5 className="card-title">Math</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -152,6 +178,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="http://www.guitarbitz.com/downloads/1420803550Guitar-Tutors.jpg"  />
                                         <div className="card-body">
                                             <h5 className="card-title">Music</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -160,6 +188,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="https://www.sigmaaldrich.com/content/dam/sigma-aldrich/product7/113/e029294.tif/_jcr_content/renditions/e029294-medium.jpg" />
                                         <div className="card-body">
                                             <h5 className="card-title">Science</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -170,6 +200,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="http://pragmaticcompendium.com/wp-content/uploads/2013/08/caps-lock-equals-shouting.jpg" />
                                         <div className="card-body">
                                             <h5 className="card-title">I.T</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -178,6 +210,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="https://www.sigmaaldrich.com/content/dam/sigma-aldrich/product7/113/e029294.tif/_jcr_content/renditions/e029294-medium.jpg"/>
                                         <div className="card-body">
                                             <h5 className="card-title">Science</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -186,6 +220,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="http://www.guitarbitz.com/downloads/1420803550Guitar-Tutors.jpg"/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -198,6 +234,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="https://feletviolix.files.wordpress.com/2016/01/biblical-math-2.jpg?w=350&h=200&crop=1" />
                                         <div className="card-body">
                                             <h5 className="card-title">Math</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -206,6 +244,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="http://www.guitarbitz.com/downloads/1420803550Guitar-Tutors.jpg"/>
                                         <div className="card-body">
                                             <h5 className="card-title">Music</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -214,6 +254,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="https://www.sigmaaldrich.com/content/dam/sigma-aldrich/product7/113/e029294.tif/_jcr_content/renditions/e029294-medium.jpg" />
                                         <div className="card-body">
                                             <h5 className="card-title">Science</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -224,6 +266,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="http://pragmaticcompendium.com/wp-content/uploads/2013/08/caps-lock-equals-shouting.jpg"/>
                                         <div className="card-body">
                                             <h5 className="card-title">I.T</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -232,6 +276,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="http://www.guitarbitz.com/downloads/1420803550Guitar-Tutors.jpg"/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -240,6 +286,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="http://www.guitarbitz.com/downloads/1420803550Guitar-Tutors.jpg"  />
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -252,6 +300,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="https://www.sigmaaldrich.com/content/dam/sigma-aldrich/product7/113/e029294.tif/_jcr_content/renditions/e029294-medium.jpg" />
                                         <div className="card-body">
                                             <h5 className="card-title">Science</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -260,6 +310,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="https://www.sigmaaldrich.com/content/dam/sigma-aldrich/product7/113/e029294.tif/_jcr_content/renditions/e029294-medium.jpg" />
                                         <div className="card-body">
                                             <h5 className="card-title">Science</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -268,6 +320,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="https://www.sigmaaldrich.com/content/dam/sigma-aldrich/product7/113/e029294.tif/_jcr_content/renditions/e029294-medium.jpg"  />
                                         <div className="card-body">
                                             <h5 className="card-title">Science</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -278,6 +332,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="http://pragmaticcompendium.com/wp-content/uploads/2013/08/caps-lock-equals-shouting.jpg" />
                                         <div className="card-body">
                                             <h5 className="card-title">I.T</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -286,6 +342,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="http://www.guitarbitz.com/downloads/1420803550Guitar-Tutors.jpg"/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
@@ -294,6 +352,8 @@ class Events extends Component {
                                         <img className="card-img-top" src="http://www.guitarbitz.com/downloads/1420803550Guitar-Tutors.jpg"/>
                                         <div className="card-body">
                                             <h5 className="card-title">Card title</h5>
+                                            <h6 className="card-title">2 Feb 11:00 - 12:00 </h6>
+
                                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                         </div>
