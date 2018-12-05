@@ -9,14 +9,9 @@ class Signin extends Component {
         inputEmail: '',
         inputPassword: '',
 
-        userInputEmail: '',
-        userInputPassword: '',
-        loggedIn: false,
-        userType: ''
-    }
+      };
 
-
-    handleSubmitPOST = async e => {
+      handleSubmitPOST = async e => {
         e.preventDefault();
         const response = await fetch('/S_signin', {
           method: 'POST',
@@ -30,39 +25,6 @@ class Signin extends Component {
         console.log(body);
         //this.setState({ login: body });
         console.log("handleSubmitPOST body: ", body);
-    }
-
-    //get email from input field
-    handleEmailChange = ({ target: { value } }) => {
-        this.setState({ userInputEmail: value });
-    }
-
-    //get password from input field
-    handlePasswordChange = ({ target: { value } }) => {
-        this.setState({ userInputPassword: value });
-    }
-
-    postUser = async event => {
-        const response = await fetch('/user', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ email: this.state.userInputEmail }),
-        });
-        const user = await response.text();
-        // this.setState({ responseToPost: body });
-        this.state.userType = user;
-        console.log("postUser: ", user);
-
-    }
-
-    handleSubmit = (event) => {
-        event.preventDefault();
-        console.log(this.state.userInputEmail, this.state.userInputPassword);
-        this.postUser();
-        // this.getUser();
-        //compare current data with data in database
     }
 
 
@@ -80,45 +42,37 @@ class Signin extends Component {
         return (
             <div className="container" >
                 <div className="row">
-                    <form className="form-signin col align-middle mt-5">
+                    <form className="form-signin col align-middle mt-5" onSubmit={this.handleSubmitPOST}>
                         <span className="mbr-iconfont fa fa-user centerusericon mb-3" alt width={72} height={72} />
                         <h1 className="h3 mb-5 font-weight-normal centerusericon">Please sign in</h1>
                         <label htmlFor="inputEmail" className="sr-only">Email address</label>
-                        <input type="email" id="inputEmail" className="form-control mb-4" onChange={this.handleEmailChange} value={this.state.userInputEmail} placeholder="Email address" required autofocus />
+                        <input 
+                        type="email" 
+                        id="inputEmail" 
+                        className="form-control mb-4" 
+                        placeholder="Email address" 
+                        value={this.state.inputEmail} 
+                        onChange={e => this.setState({ inputEmail: e.target.value })} 
+                        required autofocus />
                         <label htmlFor="inputPassword" className="sr-only">Password</label>
-                        <input type="password" id="inputPassword" className="form-control mb-4" onChange={this.handlePasswordChange} value={this.state.userInputPassword} placeholder="Password" required />
+                        <input 
+                        type="password" 
+                        id="inputPassword" 
+                        className="form-control mb-4" 
+                        placeholder="Password" 
+                        value={this.state.inputPassword} 
+                        onChange={e => this.setState({ inputPassword: e.target.value })} 
+                        required />
                         <div className="checkbox mb-3">
                             <label>
                                 <input type="checkbox" defaultValue="remember-me" /> Remember me
                         </label>
                         </div>
-                        <button className="btn btn-lg btn-primary btn-block" type="submit" onClick={this.handleSubmit}>Sign in</button>
+                        <button className="btn btn-lg btn-primary btn-block" type="submit" onClick={this.handleSubmitPOST}>Sign in</button>
                     </form>
                 </div>
             </div>
         );
-        /**
-         * return (
-            <div className="container" >
-                <div className="row">
-                    <form className="form-signin col align-middle mt-5">
-                        <span className="mbr-iconfont fa fa-user centerusericon mb-3" alt width={72} height={72} />
-                        <h1 className="h3 mb-5 font-weight-normal centerusericon">Please sign in</h1>
-                        <label htmlFor="inputEmail" className="sr-only">Email address</label>
-                        <input type="email" id="inputEmail" className="form-control mb-4" onChange={this.handleEmailChange} value={this.state.userInputEmail} placeholder="Email address" required autofocus />
-                        <label htmlFor="inputPassword" className="sr-only">Password</label>
-                        <input type="password" id="inputPassword" className="form-control mb-4" onChange={this.handlePasswordChange} value={this.state.userInputPassword} placeholder="Password" required />
-                        <div className="checkbox mb-3">
-                            <label>
-                                <input type="checkbox" defaultValue="remember-me" /> Remember me
-                        </label>
-                        </div>
-                        <button className="btn btn-lg btn-primary btn-block" type="submit" onClick={this.handleSubmit}>Sign in</button>
-                    </form>
-                </div>
-            </div>
-        );
-         */
     }
 
 }
