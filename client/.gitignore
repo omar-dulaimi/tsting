@@ -21,3 +21,14 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#snapshots
+/src/components/Admin/__snapshots__
+/src/components/App/__snapshots__
+/src/components/About/__snapshots__
+/src/components/Home/__snapshots__
+/src/components/Signin/__snapshots__
+/src/components/Parents/__snapshots__
+/src/components/Teachers/__snapshots__
+/src/components/Teachers/ClassesComponents/__snapshots__
+/src/components/Teachers/ParentsComponents/__snapshots__
