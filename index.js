@@ -44,20 +44,42 @@ app.get('/numberfact', (req, res) => {
 });
 
 
-app.post('/user', function (req, res) {
-  let email = req.body.email;
+// app.post('/user', function (req, res) {
+//   let email = req.body.email;
 
-  if (email === 'a@a.com') {
-    res.send('admin');
-  } else if (email === 'b@b.com') {
-    res.send('teacher');
-  } else if (email === 'c@c.com') {
-    res.send('parent');
-  } else {
-    res.send('no such user!');
-  }
+//   if (email === 'a@a.com') {
+//     res.send('admin');
+//   } else if (email === 'b@b.com') {
+//     res.send('teacher');
+//   } else if (email === 'c@c.com') {
+//     res.send('parent');
+//   } else {
+//     res.send('no such user!');
+//   }
+// });
+
+var queryuserid = require('./db/mysql/query/queryuserid.js');
+app.post('/S_signin', (req, res) => {
+  console.log(req.body);
+  queryuserid.selectuseremail(req.body.inputEmail, function (err, sqlResult) {
+    if (err) {
+      console.log('if (err): NotWorking ', err);
+    } else {
+      console.log(sqlResult)
+      if (sqlResult === undefined) {
+        res.end(JSON.stringify({canLog: false}));
+      } else {
+        console.log("else: sqlResult ", sqlResult.email);
+        if (req.body.inputPassword === sqlResult.password) {
+          res.end(JSON.stringify({canLog: true}));
+        } else {
+          res.end(JSON.stringify({canLog: false}));
+        }
+      }
+      
+    }
+  });
 });
-
 
 
 
