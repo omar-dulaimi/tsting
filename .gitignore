@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/EduCompassy/db/mysql/conn/index.js
 
 # testing
 /coverage
