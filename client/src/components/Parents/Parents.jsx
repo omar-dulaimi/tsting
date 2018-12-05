@@ -11,6 +11,9 @@ class Parents extends Component {
     render() {
         return (
             <Fragment>
+                 <Router>
+                 <div>
+                
 
                 <div>
                     <h1>Parents Page:</h1>
@@ -43,7 +46,7 @@ class Parents extends Component {
                     </button>
 
                         <div className="dropdown-menu mymenu ">
-                            <a className="dropdown-item muitem " href="#">Timetable</a>
+                            <Link className="dropdown-item muitem " to="/timetable">Timetable</Link>
                             <a className="dropdown-item muitem " href="#">Homework</a>
                             <a className="dropdown-item muitem " href="#">Marks</a>
                             <a className="dropdown-item muitem " href="#">WeeklyReports</a>
@@ -51,13 +54,13 @@ class Parents extends Component {
                         </div>
 
                     </div>
-                    <Router>
-                        <div>
+                   
+                       
 
-                            <Link type="button" class="btn btn-info" to="/timetable">timetable</Link>
+                           
                             <Route exact path="/timetable" component={TimeTable} />
-                        </div>
-                    </Router>
+                        
+                    
 
                     <button type="button" className="btn btn-info" data-toggle="modal" data-target="#exampleModal" >Complians</button>
                     <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -94,11 +97,15 @@ class Parents extends Component {
                         </div>
                     </div>
                 </form>
-
-
+                </div>
+</Router> 
             </Fragment>
         );
     }
 }
 
 export default Parents;
+            
+            
+            
+ 
